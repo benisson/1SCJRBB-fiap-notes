@@ -1,0 +1,7 @@
+<article>
+  <p>{{noteProp.date | date: "dd/MM/yyyy hh:mm"}}</p>
+  <p>{{noteProp.text}}</p>
+  <span *ngIf="noteProp.urgent" class="material-icons" id="priority">priority_high</span>
+  <span class="material-icons" title="Remover nota" aria-label="Remover nota" (click)="confirmRemove()"> delete_forever </span>
+  <span class="material-icons margin-action" title="Editar nota"  aria-label="Editar nota" (click)="edit(noteProp)"> edit_note </span>
+</article>
